@@ -1,0 +1,23 @@
+{
+    "name": "ikovbas/laravel-env-switcher",
+    "description": "Environment Switcher helps you to managing multiple .env of your Laravel 5 / Lumen 5 app.",
+    "type": "library",
+    "require": {
+        "illuminate/console": "*",
+        "illuminate/support": "*",
+        "symfony/console": "*"
+    },
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Ivan Kovbas",
+            "email": "kovbas.ivan@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "IKovbas\\EnvSwitcher\\": "src"
+        }
+    }
+}
