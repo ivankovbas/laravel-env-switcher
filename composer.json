@@ -7,14 +7,14 @@
         "illuminate/support": "*",
         "symfony/console": "*"
     },
-    "license": "GPL",
+    "license": "MIT",
     "authors": [
         {
             "name": "Ivan Kovbas",
             "email": "kovbas.ivan@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "IKovbas\\EnvSwitcher\\": "src"
