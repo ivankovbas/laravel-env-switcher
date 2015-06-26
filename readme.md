@@ -5,15 +5,13 @@ Environment Switcher helps you to managing multiple .env of your Laravel 5 / Lum
 The problem of **dotenv** is that you can't keep `.env` files for all your environments under version controll.
 This package trys to help you with it. For more details see [Usage](#usage-section) section.
 
-(#some-markdown-heading)
-
 ## Installation
 
 **Environment Switcher** can be installed globally or per project, with **Composer**:
 
 * **Globally**:
 
-        composer global require composer require ikovbas/laravel-env-switcher
+        composer global require ikovbas/laravel-env-switcher
 
 * **Per project**:
 
@@ -40,7 +38,7 @@ Open your `bootstrap/app.php` file and add the following line to **Register Serv
   Current application environment: production
   ```
 
-* Save the current `.env` file to `.$APP_ENV.env`:
+* Save the current `.env` file to `.env.$APP_ENV`:
 
   ```bash
   $ php artisan env:switch --save
@@ -53,7 +51,7 @@ Open your `bootstrap/app.php` file and add the following line to **Register Serv
   $ php artisan env:switch development
   Successfully switched from production to development
   ```
-  **Note:** `.env.development` should exist before calling the command.
+  **Note:** `.env.development` file should exists before calling the command.
 
 ## Copyright and license
 
