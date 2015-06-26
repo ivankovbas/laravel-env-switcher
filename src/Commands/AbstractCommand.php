@@ -22,7 +22,7 @@ class AbstractCommand extends Command{
         $this->copyFile($dotenv_path, $current_env_file_path);
 
         // Show message
-        $this->info('Environmental config was successfully saved to <comment>' . $current_env_file_name . '</comment>.');
+        $this->info('Environmental config was successfully saved to <comment>' . $current_env_file_name . '</comment>');
     }
 
     /**
@@ -55,7 +55,7 @@ class AbstractCommand extends Command{
         $this->copyFile($target_env_file_path, $dotenv_path);
 
         // Show message
-        $this->info('Successfully switched from <comment>' . $current_env . '</comment> to <comment>' . $target_env . '</comment>.');
+        $this->info('Successfully switched from <comment>' . $current_env . '</comment> to <comment>' . $target_env . '</comment>');
     }
 
     /**
