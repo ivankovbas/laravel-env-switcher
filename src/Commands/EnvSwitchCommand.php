@@ -42,7 +42,8 @@ class EnvSwitchCommand extends AbstractCommand {
         } else {
 
             // Show current environment
-            $this->call('env');
+            $this->showEnvironment();
+
         }
     }
 

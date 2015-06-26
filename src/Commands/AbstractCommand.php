@@ -14,7 +14,7 @@ class AbstractCommand extends Command{
         $dotenv_path            = getcwd() . '/.env';
 
         // Determinate current environment and file name for it
-        $current_env            = $this->laravel['env'];
+        $current_env            = getenv('APP_ENV');
         $current_env_file_name  = $this->getEnvFileName($current_env);
         $current_env_file_path  = getcwd() . '/' . $current_env_file_name;
 
@@ -36,7 +36,7 @@ class AbstractCommand extends Command{
         $dotenv_path            = getcwd() . '/.env';
 
         // Determinate current
-        $current_env            = $this->laravel['env'];
+        $current_env            = getenv('APP_ENV');
 
         // Determinate target environment and file name for it
         $target_env             = $this->argument('env');
@@ -56,6 +56,13 @@ class AbstractCommand extends Command{
 
         // Show message
         $this->info('Successfully switched from <comment>' . $current_env . '</comment> to <comment>' . $target_env . '</comment>.');
+    }
+
+    /**
+     * Show current environment
+     */
+    protected function showEnvironment() {
+        $this->info('Current application environment: <comment>' . getenv('APP_ENV') . '</comment>');
     }
 
     /**
