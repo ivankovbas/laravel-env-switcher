@@ -1,6 +1,6 @@
 {
     "name": "ikovbas/laravel-env-switcher",
-    "description": "Environment Switcher helps you to managing multiple .env of your Laravel 5 / Lumen 5 app.",
+    "description": "Laravel 5 / Lumen 5 Environment Switcher",
     "type": "library",
     "require": {
         "illuminate/console": "*",
