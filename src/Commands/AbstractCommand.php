@@ -111,6 +111,11 @@ class AbstractCommand extends Command{
      */
     protected function isEnvironmentSaved() {
 
+        // Check if dot env file exist
+        if (!File::exists($this->dotenv_path)) {
+            return true;
+        }
+
         // Check if custom env file exists
         if (!File::exists($this->current_env_file_path)) {
             return false;

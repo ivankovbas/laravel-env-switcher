@@ -3,9 +3,6 @@
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
 
-use Illuminate\Console\Command;
-use Illuminate\Support\Facades\File;
-
 class EnvSwitchCommand extends AbstractCommand {
 
     /**
